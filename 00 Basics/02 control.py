@@ -68,3 +68,24 @@ def my_range(start, end, step):
 nl(1)
 for x in my_range(1, 10, 0.5):
     print(x, ' ', end='')
+
+nl(2)
+#  _____________ WHILE __________________
+
+count = 0
+while count <= 5:
+    print(count, ' ', end='')
+    count += 1
+
+nl(1)
+
+# do .. while
+condition = True
+looped = 0
+print("looped: ", end='')
+while condition:
+    print(looped, ' ', end='')
+    looped += 1
+    if looped > 5:
+        condition = False
+# end of loop
