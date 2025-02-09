@@ -58,4 +58,13 @@ list_of_lists = [ [1, 2, 3], ['abc', 'def', 'ghi'], [7, 8, 9]]
 for list in list_of_lists:
     for x in list:
         print(x, ' ', end='')
+nl(1)
 
+# create own range using yield
+def my_range(start, end, step):
+    while start <= end:
+        yield start
+        start += step
+nl(1)
+for x in my_range(1, 10, 0.5):
+    print(x, ' ', end='')
