@@ -17,8 +17,9 @@ except ValueError:
 if (validnumber):
     print("Now let's calculate!")
     while (number >= rownumber):
+        print("#"*rownumber)
         number -= rownumber
         rownumber += 1
         # print("row:",number)
     else:
-        print("Number of pyramid rows: ", rownumber)
+        print("Number of pyramid rows: ", rownumber-1)
